@@ -1,11 +1,22 @@
 <html style="background-color:gold;">
  <title>Sunking loans</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<style>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
  <h1 style="text-align:center;color:white;">The Green Light Planet</h1>
 
  <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="download.png" width="150" height="100" style="align:center;"></div>
     <script>
-    alert("SORRY...YOU HAVE NO ACCOUNT YET...YOU HAVE TO REGISTER ")
+function showAlert() {
+  swal("SORRY...YOU HAVE NO ACCOUNT YET...YOU HAVE TO REGISTER", {
+    icon: "error",
+  });
+}
+//Event listener for DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  showAlert(); // Call the showAlert function when the DOM is fully loaded
+});
+    
     </script>
 
  <form action="response1.html" style="align-items:center;">
