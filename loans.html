@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html style="background-color:gold;">
     <title>Sunking loans</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -8,8 +9,16 @@
         <h1 style="color:green;text-align:center;"><b>THE SUNKING LOANS</b></h1>
     </head> 
     <body>
-    <script>
-    alert("All SUNKING loans have a payment period of six months ")
+    <script type="text/javascript">
+function showAlert() {
+  swal("All SUNKING loans have a payment period of six months ", {
+    icon: "info",
+  });
+}
+    //Event listener for DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  showAlert(); // Call the showAlert function when the DOM is fully loaded
+});
     </script>
     <p style="color:blue;">Click on the "Apply" to get a loan of your choice</p>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <p1>  Available Loans:</p1>
