@@ -1,12 +1,23 @@
 <html style="background-color:gold;">
     <title>Sunking loans</title>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+</script>
+
     <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
  
         <h1 style="color:white;text-align:center;"><b><strong>THE SUNKING LOANS</strong></b></h1>
     </head> 
     <script type="text/javascript">
-    alert("WELCOME TO THE GREEN LIGHT WORLD-SUNKING");
+function showAlert() {
+  swal("WELCOME TO THE GREEN LIGHT WORLD-SUNKING", {
+    icon: "info",
+  });
+}
+    //Event listener for DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  showAlert(); // Call the showAlert function when the DOM is fully loaded
+});
     </script>
       <h3 style="text-align:center;"><strong>Welcome To The GreenLight Planet</strong></h3>
 <p><strong>NOTE:</strong><i>Those who already have SUNKING products have a added advantage and therefore a higher loan limit.</i></p>
